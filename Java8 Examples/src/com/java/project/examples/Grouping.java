@@ -62,7 +62,7 @@ public class Grouping {
                 )
         );
     }
-
+   
     private static Map<Dish.Type, Long> countDishesInGroups() {
         return Dish.menu.stream().collect(groupingBy(Dish::getType, counting()));
     }
